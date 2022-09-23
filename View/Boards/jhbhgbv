@@ -1,0 +1,29 @@
+<!-- <table>
+<?php
+for($i = 0;$i < count($data);$i++){
+
+  $arr = $data[$i]['Board'];
+  echo "<tr><td>{$arr['id']}</td>";
+  echo "<td>{$arr['name']}</td>";
+  echo "<td>{$arr['title']}</td>";
+  echo "<td>{$arr['content']}</td></tr>";
+}
+?>
+</table> -->
+
+<h1>Submission Form</h1>
+
+
+<?php
+echo 'name';
+echo $this->Form->create(false, array('type'=>'post', 'url'=>'addRecord'));
+echo $this->Form->text('Board.name');
+echo 'title';
+echo $this->Form->text('Board.title');
+echo 'content';
+echo $this->Form->text('Board.content');
+echo $this->Form->submit('submit');
+echo $this->Form->end();
+?>
+
+<br /><hr><br />

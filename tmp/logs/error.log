@@ -1,0 +1,1767 @@
+2022-09-20 08:56:10 Error: [MissingViewException] View file "Posts/hello_world.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/hello_world.ctp',
+)
+Request URL: /cakephp/posts/hello_world
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Posts/hello_wor...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 08:57:33 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-20 08:58:38 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Posts/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 08:59:45 Error: [MissingViewException] View file "Posts/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/index.ctp',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Posts/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 10:06:05 Error: [MissingActionException] Action AppController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'view',
+)
+Request URL: /cakephp/app/view/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-20 10:06:56 Error: [MissingActionException] Action AppController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'view',
+)
+Request URL: /cakephp/app/view/Posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-20 10:27:44 Error: [Error] Call to a member function read() on null
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 [internal function]: PostsController->view('1')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 10:29:17 Error: [Error] Call to a member function read() on null
+Request URL: /cakephp/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 10:32:47 Error: [Error] Call to a member function read() on null
+Request URL: /cakephp/posts/view/
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 10:32:51 Error: [Error] Call to a member function read() on null
+Request URL: /cakephp/posts/view/1
+Stack Trace:
+#0 [internal function]: PostsController->view('1')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 10:47:28 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 10:49:24 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 10:51:51 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 10:52:24 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 10:53:58 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 10:54:38 Error: [ParseError] syntax error, unexpected ';', expecting ')'
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-20 10:54:48 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 11:27:24 Error: [Error] Call to a member function create() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 11:30:06 Error: [Error] Call to a member function create() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-20 11:39:26 Error: [Error] Call to a member function setFlash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:41:08 Error: [Error] Call to a member function set() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:45:20 Error: [Error] Call to a member function success() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:53:00 Error: [Error] Call to a member function setFlash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:55:22 Error: [Error] Call to a member function render() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:56:42 Error: [Error] Call to a member function flash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:58:22 Error: [Error] Call to a member function setFlash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 11:59:39 Error: [Error] Call to undefined method PostsController::redirct()
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:02:35 Error: [Error] Call to a member function setFlash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:05:18 Error: [Error] Call to a member function flash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:06:48 Error: [Error] Call to a member function set() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:15:11 Error: [Error] Call to a member function flash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:17:22 Error: [Error] Call to a member function setFlash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:21:58 Error: [Error] Call to a member function set() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:25:42 Error: [Error] Call to a member function set() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-20 12:28:46 Error: [Error] Call to a member function setFlash() on null
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 [internal function]: PostsController->add()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-21 01:26:25 Error: [Error] Call to a member function create() on null
+Request URL: /cakephp/posts/edit/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-21 01:57:34 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/edit/3
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-21 01:57:53 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post/edit/3
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-21 03:52:45 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-21 04:12:43 Error: [ArgumentCountError] Too few arguments to function PostsController::view(), 0 passed and exactly 1 expected
+Request URL: /cakephp/posts/view
+Stack Trace:
+#0 [internal function]: PostsController->view()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-21 04:22:07 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/edit/2
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-21 04:51:50 Error: [ParseError] syntax error, unexpected 'id' (T_STRING), expecting ')'
+Request URL: /cakephp/posts/view/%7Bid%7D/
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-21 05:13:33 Error: [MissingControllerException] Controller class EditController could not be found.
+Exception Attributes: array (
+  'class' => 'EditController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/edit/4
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-21 05:14:20 Error: [ParseError] syntax error, unexpected ''$id));' (T_ENCAPSED_AND_WHITESPACE), expecting ')'
+Request URL: /cakephp/posts/view
+Stack Trace:
+#0 [internal function]: App::load('PostsController')
+#1 [internal function]: spl_autoload_call('PostsController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('PostsController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-21 08:55:40 Error: [MissingActionException] Action PostsController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'delete',
+)
+Request URL: /cakephp/posts/delete/1/Sure%3F
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-21 09:07:19 Error: [Error] Call to a member function link() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-22 03:58:47 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cakephp/posts/edit/10
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3025): Model->_readDataSource('first', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1636): Model->find('first', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/PostsController.php(34): Model->read(NULL, '10')
+#5 [internal function]: PostsController->edit('10')
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2022-09-22 03:58:52 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/UsersController.php(10): Model->find('all')
+#4 [internal function]: UsersController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-09-22 04:07:55 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/UsersController.php(10): Model->find('all')
+#4 [internal function]: UsersController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-09-22 04:14:10 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/UsersController.php(10): Model->find('all')
+#4 [internal function]: UsersController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-09-22 04:15:41 Error: [MissingTableException] Table users for model User was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'users',
+  'class' => 'User',
+  'ds' => 'default',
+)
+Request URL: /cakephp/users
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('users')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/UsersController.php(10): Model->find('all')
+#4 [internal function]: UsersController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-09-22 08:01:36 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:06:49 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:09:21 Error: [MissingActionException] Action PostsController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'login',
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-22 08:09:30 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:10:34 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:10:39 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:10:43 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:10:47 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:10:53 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:13:04 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:13:10 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:16:17 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:18:33 Error: [ParseError] syntax error, unexpected '}'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('UsersController')
+#1 [internal function]: spl_autoload_call('UsersController')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('UsersController')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-22 08:20:13 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:24:17 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:24:44 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:25:16 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:25:24 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:26:02 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:26:13 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:26:22 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:27:27 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:27:40 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:27:46 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:29:16 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:30:35 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:30:56 Error: [Error] Call to a member function allow() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Event/CakeEventManager.php(244): AppController->beforeFilter(Object(CakeEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-22 08:30:56 Error: Fatal Error (1): Uncaught Error: Call to a member function allow() on null in /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/AppController.php:19
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Event/CakeEventManager.php(244): AppController->beforeFilter(Object(CakeEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#5 [internal function]: ErrorHandler::handleException(Object(Error))
+#6 {main}
+  thrown in [/Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/AppController.php, line 19]
+2022-09-22 08:30:56 Error: [FatalErrorException] Uncaught Error: Call to a member function allow() on null in /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/AppController.php:19
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Event/CakeEventManager.php(244): AppController->beforeFilter(Object(CakeEvent))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#5 [internal function]: ErrorHandler::handleException(Object(Error))
+#6 {main}
+  thrown
+Request URL: /cakephp/posts
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Uncaught Error:...', '/Applications/X...', 19)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Core/App.php(970): ErrorHandler::handleError(1, 'Uncaught Error:...', '/Applications/X...', 19, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#3 [internal function]: App::shutdown()
+#4 {main}
+2022-09-22 08:32:31 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:43:43 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:43:44 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:46:38 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:46:45 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:46:51 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:47:25 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:51:03 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 08:54:34 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 09:43:39 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 09:44:12 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 09:56:34 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `bl...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Post), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/PostsController.php(35): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2022-09-22 10:01:50 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'password' doesn't have a default value
+Request URL: /cakephp/posts/add
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `bl...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `bl...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Post), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/PostsController.php(35): Model->save(Array)
+#6 [internal function]: PostsController->add()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2022-09-22 10:02:37 Error: [Error] Call to a member function login() on null
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 [internal function]: PostsController->login()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-22 10:08:23 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:09:59 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:10:32 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:14:35 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:20:33 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:20:52 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:29:45 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:30:13 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:36:38 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:38:12 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-22 10:40:00 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 00:20:01 Error: [MissingControllerException] Controller class SampleController could not be found.
+Exception Attributes: array (
+  'class' => 'SampleController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/sample/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 01:04:44 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3053): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3025): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/PostsController.php(29): Model->find('all')
+#4 [internal function]: PostsController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2022-09-23 01:50:30 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 03:13:54 Error: [MissingActionException] Action BoardsController::index.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'index.php',
+)
+Request URL: /cakephp/boards/index.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 03:17:53 Error: [MissingActionException] Action BoardsController::index.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'index.php',
+)
+Request URL: /cakephp/boards/index.php
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 03:18:08 Error: [MissingActionException] Action BoardsController::index.() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'index.',
+)
+Request URL: /cakephp/boards/index.
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 03:26:18 Error: [MissingActionException] Action BoardsController::addRecord() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'addRecord',
+)
+Request URL: /cakephp/boards/addRecord
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 03:28:32 Error: [MissingTableException] Table posts for model Post was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'posts',
+  'class' => 'Post',
+  'ds' => 'default',
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(3686): Model->setSource('posts')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/Helper/FormHelper.php(480): FormHelper->_introspectModel('Post', 'fields')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/View/Posts/login.ctp(3): FormHelper->create()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2022-09-23 03:30:42 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:31:07 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:31:39 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:32:16 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:32:27 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:33:30 Error: [MissingActionException] Action BoardsController::post() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'post',
+)
+Request URL: /cakephp/boards/post
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 03:35:11 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:38:11 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:39:56 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:46:09 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:46:40 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/posts/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 03:51:54 Error: [ParseError] syntax error, unexpected ';', expecting ')'
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: App::load('Board')
+#1 [internal function]: spl_autoload_call('Board')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('Board')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(746): ClassRegistry::init('Board')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(376): Controller->loadModel('Board')
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(414): Controller->__isset('Board')
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/BoardsController.php(7): Controller->__get('Board')
+#7 [internal function]: BoardsController->index()
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2022-09-23 05:04:28 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: App::load('BoardsControlle...')
+#1 [internal function]: spl_autoload_call('BoardsControlle...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(266): class_exists('BoardsControlle...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(235): Dispatcher->_loadController(Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(158): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2022-09-23 05:04:49 Error: [MissingViewException] View file "Board/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Board/index.ctp',
+)
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Board/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:16:37 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:18:24 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:18:44 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:20:32 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:21:01 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:21:06 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:21:10 Error: [MissingControllerException] Controller class BoardController could not be found.
+Exception Attributes: array (
+  'class' => 'BoardController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/board
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 05:23:06 Error: [MissingControllerException] Controller class BoardController could not be found.
+Exception Attributes: array (
+  'class' => 'BoardController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/board
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 05:23:39 Error: [MissingControllerException] Controller class BoardController could not be found.
+Exception Attributes: array (
+  'class' => 'BoardController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/board
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 05:23:40 Error: [MissingControllerException] Controller class BoardController could not be found.
+Exception Attributes: array (
+  'class' => 'BoardController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/board
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 05:23:48 Error: [MissingViewException] View file "Boards/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Boards/index.ctp',
+)
+Request URL: /cakephp/boards/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName('Boards/index')
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:24:13 Error: [MissingActionException] Action BoardsController::addRecord() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'addRecord',
+)
+Request URL: /cakephp/boards/addRecord
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 05:25:44 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'personal_id' doesn't have a default value
+Request URL: /cakephp/boards/addRecord
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `my...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `my...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(Board), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/Controller/BoardsController.php(14): Model->save(Array)
+#6 [internal function]: BoardsController->addRecord()
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2022-09-23 05:36:32 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: BoardsController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:37:01 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: BoardsController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:45:20 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: BoardsController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:48:59 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: BoardsController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:50:16 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/boards/index
+Stack Trace:
+#0 [internal function]: BoardsController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 05:53:23 Error: [MissingActionException] Action BoardsController::personals() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'personals',
+)
+Request URL: /cakephp/boards/personals
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 07:21:53 Error: [Error] Call to a member function find() on null
+Request URL: /cakephp/boards/
+Stack Trace:
+#0 [internal function]: BoardsController->index()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 07:30:18 Error: [MissingActionException] Action BoardsController::personals() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'personals',
+)
+Request URL: /cakephp/boards/personals
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 07:46:00 Error: [MissingControllerException] Controller class PersonalController could not be found.
+Exception Attributes: array (
+  'class' => 'PersonalController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/personal/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 07:46:22 Error: [MissingActionException] Action BoardsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'edit',
+)
+Request URL: /cakephp/boards/edit/4
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 08:49:42 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 08:54:03 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 08:54:55 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 08:57:36 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:00:26 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:00:58 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:02:21 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:02:56 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:03:31 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:03:52 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:04:23 Error: [ArgumentCountError] Too few arguments to function BoardsController::show(), 0 passed and exactly 1 expected
+Request URL: /cakephp/boards/show
+Stack Trace:
+#0 [internal function]: BoardsController->show()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(BoardsController), Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2022-09-23 09:38:30 Error: [MissingActionException] Action BoardsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'edit',
+)
+Request URL: /cakephp/boards/edit/4
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 10:00:29 Error: [Error] Call to undefined method View::Form_create()
+Request URL: /cakephp/boards/edit/8
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-23 10:02:11 Error: [Error] Call to undefined method View::Form_create()
+Request URL: /cakephp/boards/edit/8
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-23 10:02:23 Error: [Error] Call to undefined method View::Form_create()
+Request URL: /cakephp/boards/edit/8
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-23 10:03:52 Error: [MissingControllerException] Controller class SampleController could not be found.
+Exception Attributes: array (
+  'class' => 'SampleController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/sample/boards/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2022-09-23 10:24:29 Error: [Error] Call to a member function create() on null
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include()
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2022-09-23 10:46:15 Error: [ParseError] syntax error, unexpected '<', expecting function (T_FUNCTION) or const (T_CONST)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 [internal function]: App::load('User')
+#1 [internal function]: spl_autoload_call('User')
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Utility/ClassRegistry.php(146): class_exists('User')
+#3 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/Helper/FormHelper.php(163): ClassRegistry::init('User')
+#4 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('User')
+#5 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('User', 'key')
+#6 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/View/Users/login.ctp(5): FormHelper->create('User', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(971): include('/Applications/X...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(933): View->_evaluate('/Applications/X...', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/View/View.php(473): View->_render('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#11 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#12 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2022-09-23 10:48:52 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cakephp/users/index
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 11:00:47 Error: [MissingActionException] Action BoardsController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'login',
+)
+Request URL: /cakephp/boards/login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2022-09-23 11:05:54 Error: [MissingActionException] Action BoardsController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'BoardsController',
+  'action' => 'logout',
+)
+Request URL: /cakephp/boards/logout
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BoardsController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/cakephp/app/webroot/index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
