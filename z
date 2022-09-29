@@ -1,0 +1,106 @@
+public function message($id = null) {
+        $this->User->id = $id;
+        if ($this->request->is('post') || $this->request->is('put')) {
+            if ($this->User->save($this->request->data)) {
+                $this->Flash->success(__('The user has been saved'));
+                return $this->redirect(array('controller' => 'messages', 'action' => 'index'));
+            }
+            $this->Flash->error(
+                __('The user could not be saved. Please, try again.')
+            );
+        }
+    }
+
+
+$pdo = new PDO(
+    'mysql:host=localhost;dbname=Calendar;',
+    'root',
+    '',
+    [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
+);
+
+$r = "SELECT * FROM users WHERE id = '$id'";
+$s = $pdo->prepare($r);
+$s->execute();
+
+$t = $s->fetchAll(PDO::FETCH_ASSOC);
+
+var_dump($t);
+die();
+
+ 
+ 
+ // if($this->request->is('post')){
+            
+        //     $this->request->data['User']['front_image_name'] = $this->request->data['User']['front_image']['name'];
+        //     $this->request->data['User']['front_image_contents'] = file_get_contents($this->requeset->data['User']['front_image']['tmp_name']);
+        //     $this->User->create();
+        //     $this->User->save($this->request->data);
+        // }
+
+        $pdo = new PDO(
+            'mysql:host=localhost;dbname=Calendar;',
+            'root',
+            '',
+            [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]
+        );
+
+        if(isset($_POST["save"]) && !empty($_POST["save"])){
+        
+                $file = $_FILES['file'];
+
+                $fileName = $file['file']['name'];
+                $fileTmpName = $file['file']['tmp_name'];
+                $fileSize = $file['file']['size'];
+                $fileError = $file['file']['error'];
+                $fileType = $file['file']['type'];
+                $NewFileName = uniqid('', true);
+
+                $fileExt = explode('.', $fileName);
+                $fileActualExt = strtolower(end($fileExt));
+
+                $fileNameNew = uniqid('', true).".".$fileActualExt;
+
+                try {
+                    $stmt = $pdo->prepare('INSERT INTO images (image_name, image_url, size, error, image_type) VALUES(:image_name, :image_url, :size, :error, :image_type)');
+                            
+                    $stmt->bindValue(':image_name', $fileNameNew);
+                    $stmt->bindValue(':image_url', $fileTmpName);
+                    $stmt->bindValue(':size', $fileSize);
+                    $stmt->bindValue(':error', $fileError);
+                    $stmt->bindValue(':image_type', $fileType);
+        
+                    $stmt->execute();
+        
+                } catch(PDOException $e) {
+                    echo $e->getMessage();
+                } finally {
+                    $pdo = null;
+                }
+
+                $allowed = array('jpg', 'gif', 'png');
+
+                if (in_array($fileActualExt, $allowed)) {
+                    if ($fileError === 0){
+                        if($fileSize < 5000000) {
+
+                            debug($fileNameNew);
+                            
+                            $fileDestination = 'uploads/'.$fileNameNew;
+                            
+                            move_uploaded_file($fileTmpName, $fileDestination);
+        
+                        } else {
+                            $test_alert = "<script type='text/javascript'>alert('Your file size is too big!');</script>";
+                            echo $test_alert;
+                        }
+                    } else {
+                        $test_alert = "<script type='text/javascript'>alert('There was an error uploading your file!');</script>";
+                        echo $test_alert;
+                    }
+                } else {
+                    $test_alert = "<script type='text/javascript'>alert('You cannot upload files of this type!');</script>";
+                    echo $test_alert;
+                }
+            
+        }

@@ -1,38 +1,152 @@
 <?php
 
+App::uses('AllController', 'Controller');
+
 class UsersController extends AppController {
-    public $name = 'Users';
-    public $components = array('Auth');
 
-    public function login(){
-        if ($this->request->isPost()){
-            if($this->Auth->login()){
-                $this->redirect($this->Auth->redirect());
+    public function beforeFilter() {
+        parent::beforeFilter();
+        // ユーザー自身による登録とログアウトを許可する
+        $this->Auth->allow('add', 'logout', 'login');
+    }
+
+    public function isAuthorized($user) {
+        if (in_array($this->action, array('edit', 'delete'))){
+            if ($user['id'] != $this->request->params['pass'][0]){
+                return false;
+            }
+            return true;
+        }
+    }
+
+    public function index() {
+        //recrusiveでどれだけの範囲のデータを集めてくるかを決める。
+        $this->User->recursive = 0;
+        $this->set('users', $this->paginate());
+    }
+
+    public function view($id = null) {
+        $this->User->id = $id;
+        if (!$this->User->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        $this->set('user', $this->User->findById($id));
+    }
+
+    public function add() {
+        if ($this->request->is('post')) {
+            $this->User->create();
+            if ($this->User->save($this->request->data)) {
+                //__call() magic method メッセージを表示するときに使われる
+                $this->Flash->success(__('The user has been saved'));
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Flash->error(
+                __('The user could not be saved. Please, try again.')
+            );
+        }
+    }
+
+    public function edit($id = null) {
+        $this->User->id = $id;
+        if (!$this->User->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        if ($this->request->is('post') || $this->request->is('put')) {
+            $file = $_FILES;
+            
+         
+                $fileName = $file['front_image']['name'];
+                $fileTmpName = $file['front_image']['tmp_name'];
+                $fileSize = $file['front_image']['size'];
+                $fileError = $file['front_image']['error'];
+                $fileType = $file['front_image']['type'];
+                $NewFileName = uniqid('', true);
+
+                $fileExt = explode('.', $fileName);
+                $fileActualExt = strtolower(end($fileExt));
+
+                $fileNameNew = uniqid('', true).".".$fileActualExt;
+
+                $allowed = array('jpg', 'gif', 'png');
+
+
+                if (in_array($fileActualExt, $allowed)) {
+                    if ($fileError === 0){
+                        if($fileSize < 5000000) {
+                            
+                            $fileDestination = ROOT . '/'.APP_DIR . '/' . WEBROOT_DIR . '/img/'.$fileNameNew;
+                            
+                            move_uploaded_file($fileTmpName, $fileDestination);
+        
+
+                        } else {
+                            
+                        }
+                    } else {
+                        
+                    }
+                } else {
+                    
+                }
+             
+
+                $this->request->data["User"]['filename'] = $fileNameNew;
+
+                
+
+            if ($this->User->save($this->request->data)) {
+                $this->Flash->success(__('The user has been saved'));
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Flash->error(
+                __('The user could not be saved. Please, try again.')
+            );
+
+        } else {
+            $this->request->data = $this->User->findById($id);
+            unset($this->request->data['User']['password']);
+        }
+
+        
+        
+
+
+        
+    }
+
+
+    public function delete($id = null) {
+        // Prior to 2.5 use
+        // $this->request->onlyAllow('post');
+
+        $this->request->allowMethod('post');
+
+        $this->User->id = $id;
+        if (!$this->User->exists()) {
+            throw new NotFoundException(__('Invalid user'));
+        }
+        if ($this->User->delete()) {
+            $this->Flash->success(__('User deleted'));
+            return $this->redirect(array('action' => 'index'));
+        }
+        $this->Flash->error(__('User was not deleted'));
+        return $this->redirect(array('action' => 'index'));
+    }
+
+    public function login() {
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                $this->redirect($this->Auth->redirect(array('action' => 'index')));
             } else {
-                $this->Session->setFlash('Wrong username or password', 'default', array(), 'auth');
+                $this->Flash->error(__('Invalid username or password, try again'));
             }
         }
     }
-
-    public function logout(){
-        $this->Auth->logout();
-        return $this->redirect(array('action'=>'index', 'controller'=>'Boards'));
+    
+    public function logout() {
+        $this->redirect($this->Auth->logout());
     }
 
-    public function add(){
-        if (!empty($this->data)){
-            if($this->data){
-                $this->User->create();
-                $this->User->save($this->data);
-                $this->redirect(array('action' => 'login'));
-            }
-        }
-    }
-
-    public function beforeFilter(){
-        $this->Auth->allow('add');
-        $this->Auth->allow('logout');
-      }
+    
 }
-
-?>

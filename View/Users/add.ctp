@@ -1,8 +1,15 @@
-<h3>add users</h3>
-
-<?php
-echo $this->Form->create('User', array('url' => 'add'));
-echo $this->Form->input('username');
-echo $this->Form->input('password');
-echo $this->Form->end('Add');
-?>
+<div class="users form">
+<?php echo $this->Form->create('User'); ?>
+    <fieldset>
+        <legend><?php echo __('Add User'); ?></legend>
+        <?php echo $this->Form->input('username'); ?>
+        <?php echo $this->Form->input('email'); ?>
+        <?php echo $this->Form->input('password'); ?>
+        <?php echo $this->Form->input('confirm_password', ['type'=>'password']); ?>
+        <!-- // echo $this->Form->input('role', array(
+        //     'options' => array('admin' => 'Admin', 'author' => 'Author')
+        // )
+    ?> -->
+    </fieldset>
+<?php echo $this->Form->end(__('Submit')); ?>
+</div>

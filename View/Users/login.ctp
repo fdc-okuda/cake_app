@@ -1,12 +1,24 @@
+<div class="users form">
+<?php echo $this->Flash->render('auth'); ?>
+<?php echo $this->Form->create('User'); ?>
+    <fieldset>
+        
+        <?php echo $this->Form->input('username');
+        echo $this->Form->input('password');
+    ?>
+    </fieldset>
+<?php echo $this->Form->end(__('Login')); ?>
+</div>
+
+<div class="users form">
+<?php echo $this->Flash->render('auth'); ?>
 <?php
-
-if ($this->Session->check('Message.auth'))
-echo $this->Session->flash('auth');
-echo $this->Form->create('User', array('url' => 'login'));
-echo $this->Form->input('username');
-echo $this->Form->input('password');
-echo $this->Form->end('Login');
-
+    echo $this->Html->link(
+        'New User',
+        array(
+            'controller' => 'users',
+            'action' => 'add',
+            )
+        );
 ?>
-
-<br /><a href="/cakephp/users/add">Join</a>
+</div>
